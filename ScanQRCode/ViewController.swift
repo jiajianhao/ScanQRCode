@@ -13,8 +13,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        Tool.shareTool.doPrintNum()
     }
 
+    @IBAction func doNext(){
+        let scan = ScanCodeViewController()
+//        self.present(scan, animated: true, completion: nil)
+        self.navigationController?.pushViewController(scan, animated: true)
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

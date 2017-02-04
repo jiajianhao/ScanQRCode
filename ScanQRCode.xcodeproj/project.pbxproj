@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		849FE2C21DE809A40064BC58 /* ScanCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FE2BE1DE809A40064BC58 /* ScanCodeViewController.swift */; };
+		849FE2C31DE809A40064BC58 /* ScanCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849FE2BF1DE809A40064BC58 /* ScanCodeViewController.xib */; };
+		849FE2C61DE80E7C0064BC58 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849FE2C51DE80E7C0064BC58 /* AVFoundation.framework */; };
+		849FE2C91DE8304D0064BC58 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FE2C81DE8304D0064BC58 /* Tool.swift */; };
 		84B1C5711DE7D61B0063A8D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1C5701DE7D61B0063A8D0 /* AppDelegate.swift */; };
 		84B1C5731DE7D61B0063A8D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1C5721DE7D61B0063A8D0 /* ViewController.swift */; };
 		84B1C5761DE7D61B0063A8D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B1C5741DE7D61B0063A8D0 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		849FE2BE1DE809A40064BC58 /* ScanCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanCodeViewController.swift; sourceTree = "<group>"; };
+		849FE2BF1DE809A40064BC58 /* ScanCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanCodeViewController.xib; sourceTree = "<group>"; };
+		849FE2C51DE80E7C0064BC58 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		849FE2C81DE8304D0064BC58 /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		84B1C56D1DE7D61B0063A8D0 /* ScanQRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanQRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B1C5701DE7D61B0063A8D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B1C5721DE7D61B0063A8D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +37,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849FE2C61DE80E7C0064BC58 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		849FE2BC1DE809A40064BC58 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				849FE2BD1DE809A40064BC58 /* Controller */,
+				849FE2C01DE809A40064BC58 /* Model */,
+				849FE2C11DE809A40064BC58 /* View */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		849FE2BD1DE809A40064BC58 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				849FE2BE1DE809A40064BC58 /* ScanCodeViewController.swift */,
+				849FE2BF1DE809A40064BC58 /* ScanCodeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		849FE2C01DE809A40064BC58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		849FE2C11DE809A40064BC58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		849FE2C41DE80E7C0064BC58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				849FE2C51DE80E7C0064BC58 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		849FE2C71DE830390064BC58 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				849FE2C81DE8304D0064BC58 /* Tool.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		84B1C5641DE7D61B0063A8D0 = {
 			isa = PBXGroup;
 			children = (
 				84B1C56F1DE7D61B0063A8D0 /* ScanQRCode */,
 				84B1C56E1DE7D61B0063A8D0 /* Products */,
+				849FE2C41DE80E7C0064BC58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +113,8 @@
 		84B1C56F1DE7D61B0063A8D0 /* ScanQRCode */ = {
 			isa = PBXGroup;
 			children = (
+				849FE2C71DE830390064BC58 /* Tool */,
+				849FE2BC1DE809A40064BC58 /* Scan */,
 				84B1C5701DE7D61B0063A8D0 /* AppDelegate.swift */,
 				84B1C5721DE7D61B0063A8D0 /* ViewController.swift */,
 				84B1C5741DE7D61B0063A8D0 /* Main.storyboard */,
@@ -126,6 +187,7 @@
 			files = (
 				84B1C57B1DE7D61B0063A8D0 /* LaunchScreen.storyboard in Resources */,
 				84B1C5781DE7D61B0063A8D0 /* Assets.xcassets in Resources */,
+				849FE2C31DE809A40064BC58 /* ScanCodeViewController.xib in Resources */,
 				84B1C5761DE7D61B0063A8D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +200,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B1C5731DE7D61B0063A8D0 /* ViewController.swift in Sources */,
+				849FE2C21DE809A40064BC58 /* ScanCodeViewController.swift in Sources */,
 				84B1C5711DE7D61B0063A8D0 /* AppDelegate.swift in Sources */,
+				849FE2C91DE8304D0064BC58 /* Tool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +325,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = QDC3KV7D2U;
 				INFOPLIST_FILE = ScanQRCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.antrice.ScanQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,8 +340,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = QDC3KV7D2U;
 				INFOPLIST_FILE = ScanQRCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.antrice.ScanQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +370,7 @@
 				84B1C5811DE7D61B0063A8D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
